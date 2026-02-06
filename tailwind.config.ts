@@ -48,6 +48,11 @@ const config: Config = {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+        neutral: {
+          dark: 'hsl(var(--neutral-dark))',
+          medium: 'hsl(var(--neutral-medium))',
+          light: 'hsl(var(--neutral-light))',
+        },
         chart: {
           '1': 'hsl(var(--chart-1))',
           '2': 'hsl(var(--chart-2))',

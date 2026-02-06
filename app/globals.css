@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-outfit;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Glassmorphism effect */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .glass-dark {
+    @apply bg-black/30 backdrop-blur-md border border-white/10;
+  }
+
+  /* Cyber matcha specific utilities */
+  .neon-glow {
+    @apply drop-shadow-lg;
+    filter: drop-shadow(0 0 20px rgba(193, 255, 114, 0.5));
+  }
+
+  .neon-glow-secondary {
+    filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.5));
+  }
+
+  .neon-glow-accent {
+    filter: drop-shadow(0 0 20px rgba(255, 93, 143, 0.5));
+  }
+}
+
+@layer base {
+  :root {
+    /* Cyber-Matcha Palette */
+    --carbon: #08090A;
+    --matcha: #C1FF72;
+    --taro: #8B5CF6;
+    --dragonfruit: #FF5D8F;
+    --neutral-dark: #1a1b1e;
+    --neutral-medium: #2d2e33;
+    --neutral-light: #3f4147;
+    
+    /* Design Tokens */
+    --background: #08090A;
+    --foreground: #F5F5F5;
+    --card: #1a1b1e;
+    --card-foreground: #F5F5F5;
+    --popover: #1a1b1e;
+    --popover-foreground: #F5F5F5;
+    --primary: #C1FF72;
+    --primary-foreground: #08090A;
+    --secondary: #8B5CF6;
+    --secondary-foreground: #F5F5F5;
+    --muted: #3f4147;
+    --muted-foreground: #A0A0A0;
+    --accent: #FF5D8F;
+    --accent-foreground: #F5F5F5;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: #2d2e33;
+    --input: #2d2e33;
+    --ring: #C1FF72;
+    --chart-1: #C1FF72;
+    --chart-2: #8B5CF6;
+    --chart-3: #FF5D8F;
+    --chart-4: #1a1b1e;
+    --chart-5: #3f4147;
+    --radius: 0.5rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

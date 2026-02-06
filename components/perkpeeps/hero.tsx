@@ -4,7 +4,7 @@ import { ArrowRight, Smartphone } from 'lucide-react'
 export default function HeroSection() {
   const message = "Yo PerkPeeps! I want to level up my shop. Let's talk."
   const encodedMessage = encodeURIComponent(message)
-  const whatsappUrl = `https://wa.me/?text=${encodedMessage}`
+  const whatsappUrl = `https://wa.me/919767892053?text=${encodedMessage}`
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 pt-20">
@@ -14,13 +14,7 @@ export default function HeroSection() {
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
       </div>
 
-      {/* Film grain overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' fill='%23fff' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
-        }}
-      />
+
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         {/* Level badge */}
@@ -36,7 +30,7 @@ export default function HeroSection() {
         <h1
           className="font-outfit font-black text-6xl md:text-7xl lg:text-8xl leading-tight tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000"
         >
-          <span className="text-white">Your Brand.</span>
+          <span className="text-primary neon-glow">Your Brand.</span>
           <br />
           <span className="text-primary neon-glow">Their Ritual.</span>
         </h1>

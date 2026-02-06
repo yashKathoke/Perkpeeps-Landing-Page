@@ -1,24 +1,27 @@
 import React from 'react'
+import Image from 'next/image'
 import { Mail, MessageCircle, Phone } from 'lucide-react'
 
 const founders = [
   {
     id: 1,
-    name: 'Founder One',
-    title: 'Co-Founder & Visionary',
-    email: 'hello@perkpeeps.com',
-    whatsapp: '15551234567',
-    displayPhone: '+1 (555) 123-4567',
-    vibe: 'Built the dream. Living the ritual.',
+    name: 'Yash Kathoke',
+    title: 'Co-Founder & Developer',
+    email: 'kathokeyash130@gmail.com',
+    whatsapp: '919767892053',
+    displayPhone: '+91 97678 92053',
+    vibe: 'Engineers the magic. Perfects the vibe.',
+    image: '/yash.jpg',
   },
   {
     id: 2,
-    name: 'Founder Two',
-    title: 'Co-Founder & Builder',
-    email: 'build@perkpeeps.com',
-    whatsapp: '15552345678',
-    displayPhone: '+1 (555) 234-5678',
-    vibe: 'Engineers the magic. Perfects the vibe.',
+    name: 'Gokul Petkar',
+    title: 'Co-Founder & Marketer',
+    email: 'gokulpetkar@gmail.com',
+    whatsapp: '918459954252',
+    displayPhone: '+91 84599 54252',
+    vibe: 'Trying to make it big and help you make it bigger',
+    image: '/gokulpetkar.jpeg',
   },
 ]
 
@@ -45,14 +48,24 @@ function FounderCard({ founder, index }: FounderCardProps) {
 
       {/* Content */}
       <div className="relative z-10">
-        {/* Avatar placeholder */}
+        {/* Avatar */}
         <div className="mb-6 w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary p-1">
-          <div className="w-full h-full rounded-full bg-neutral-dark flex items-center justify-center">
-            <span className="text-2xl font-outfit font-black text-primary">{founder.name[0]}</span>
+          <div className="w-full h-full rounded-full bg-neutral-dark flex items-center justify-center overflow-hidden relative">
+            {founder.image ? (
+              <Image
+                src={founder.image}
+                alt={founder.name}
+                fill
+                className="object-cover"
+                sizes="80px"
+              />
+            ) : (
+              <span className="text-2xl font-outfit font-black text-primary">{founder.name[0]}</span>
+            )}
           </div>
         </div>
 
-        <h3 className="font-outfit font-black text-2xl mb-1 text-white">{founder.name}</h3>
+        <h3 className="font-outfit font-black text-2xl mb-1 text-primary">{founder.name}</h3>
         <p className="text-sm text-primary font-outfit font-bold mb-3">{founder.title}</p>
         <p className="text-sm text-muted-foreground mb-6 italic">"{founder.vibe}"</p>
 
@@ -110,13 +123,7 @@ export default function FounderSection() {
         <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       </div>
 
-      {/* Film grain overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.02] pointer-events-none"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' fill='%23fff' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
-        }}
-      />
+
 
       <div className="relative z-10 max-w-5xl mx-auto">
         <div className="text-center mb-16">

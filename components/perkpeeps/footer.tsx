@@ -74,27 +74,40 @@ export default function FooterSection() {
         <div className="h-px bg-border mb-16" />
 
         {/* Links Only (Socials Hidden) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 text-center md:text-left transition-colors duration-500">
           <div>
-            <h3 className="font-outfit font-black text-xl mb-4 text-foreground">PerkPeeps</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              The invisible loyalty layer for cafés that understand vibes and business aren't mutually exclusive.
+            <h3 className="font-outfit font-black text-xl mb-4 text-foreground">🧋 PerkPeeps</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-sm mx-auto md:mx-0">
+              QR-based loyalty and ordering built for cafés and bubble tea shops.
+              No apps. No POS lock-in. Just repeat customers.
             </p>
           </div>
 
           <div className="md:text-right">
-            <p className="text-[10px] font-bold text-foreground/30 uppercase tracking-[0.2em] mb-6">System Status</p>
-            <div className="space-y-3 flex flex-col items-center md:items-end">
-              <a href="#" className="text-xs text-foreground/40 hover:text-foreground transition-colors">Privacy Documentation</a>
-              <a href="#" className="text-xs text-foreground/40 hover:text-foreground transition-colors">Terms of Engagement</a>
-              <a href="mailto:kathokeyash130@gmail.com" className="text-xs text-foreground/40 hover:text-foreground transition-colors font-bold">kathokeyash130@gmail.com</a>
+            <div className="flex flex-col md:items-end gap-8">
+              <div>
+                <p className="text-[10px] font-bold text-foreground/30 uppercase tracking-[0.2em] mb-4">Contact</p>
+                <a href="mailto:yashkathoke@perkpeeps.com" className="text-sm text-foreground/60 hover:text-foreground transition-colors font-medium">
+                  yashkathoke@perkpeeps.com
+                </a>
+              </div>
+
+              <div>
+                <p className="text-[10px] font-bold text-foreground/30 uppercase tracking-[0.2em] mb-4">Legal</p>
+                <div className="space-y-3 flex flex-col items-center md:items-end">
+                  <a href="/privacy" className="text-xs text-foreground/40 hover:text-foreground transition-colors">Privacy Policy</a>
+                  <a href="/terms" className="text-xs text-foreground/40 hover:text-foreground transition-colors">Terms & Conditions</a>
+                  <a href="/data-deletion" className="text-xs text-foreground/40 hover:text-foreground transition-colors">Data Deletion Policy</a>
+                  <p className="text-[10px] text-foreground/20 italic mt-1">Messaging comply with Meta WhatsApp Policy</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Bottom copyright */}
         <div className="text-center opacity-20">
-          <p className="text-[10px] tracking-widest uppercase mb-2">Build with vibe © 2024</p>
+          <p className="text-[10px] tracking-widest uppercase mb-2">Built for real cafés © 2026 PerkPeeps</p>
         </div>
       </div>
     </footer>

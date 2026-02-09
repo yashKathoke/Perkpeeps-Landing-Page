@@ -59,7 +59,7 @@ export default function DataDeletionPage() {
                             </div>
                             <div className="p-6 rounded-xl border border-border bg-muted/30">
                                 <p className="font-bold mb-2">Option 2</p>
-                                <p className="text-sm text-muted-foreground">Email <a href="mailto:hello@perkpeeps.com" className="text-primary hover:underline">hello@perkpeeps.com</a> with your mobile number. We&apos;ll handle the rest.</p>
+                                <p className="text-sm text-muted-foreground">Email <a href="mailto:yashkathoke@perkpeeps.com" className="text-primary hover:underline">yashkathoke@perkpeeps.com</a> with your mobile number. We&apos;ll handle the rest.</p>
                             </div>
                         </div>
                     </div>

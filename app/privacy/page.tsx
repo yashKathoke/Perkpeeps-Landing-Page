@@ -166,7 +166,7 @@ export default function PrivacyPage() {
                             In compliance with the Digital Personal Data Protection (DPDP) Act 2023:
                         </p>
                         <ul className="list-disc ml-5 space-y-2 text-muted-foreground">
-                            <li><strong>Access/Delete:</strong> You can request access or permanent removal by emailing <a href="mailto:hello@perkpeeps.com" className="text-primary hover:underline">hello@perkpeeps.com</a>.</li>
+                            <li><strong>Access/Delete:</strong> You can request access or permanent removal by emailing <a href="mailto:yashkathoke@perkpeeps.com" className="text-primary hover:underline">yashkathoke@perkpeeps.com</a>.</li>
                             <li><strong>Removal Timeline:</strong> Permanent removal within 72 hours of request.</li>
                             <li><strong>No Selling:</strong> We never sell or share your personal data with third parties for marketing.</li>
                         </ul>
@@ -175,7 +175,7 @@ export default function PrivacyPage() {
                     <div className="pt-8 border-t border-border mt-8">
                         <h3 className="font-bold mb-4">Contact</h3>
                         <div className="grid gap-2 text-muted-foreground">
-                            <p>Email: <a href="mailto:hello@perkpeeps.com" className="text-primary hover:underline">hello@perkpeeps.com</a></p>
+                            <p>Email: <a href="mailto:yashkathoke@perkpeeps.com" className="text-primary hover:underline">yashkathoke@perkpeeps.com</a></p>
                             <p>Business Name: PerkPeeps</p>
                             <p>Country: India</p>
                         </div>

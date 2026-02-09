@@ -42,7 +42,7 @@ export default function PrivacyPage() {
                 {/* Privacy Policy Content */}
                 <div className="p-8 rounded-2xl border border-border bg-card/50 backdrop-blur-sm space-y-8 text-pretty">
                     <div>
-                        <p className="text-sm font-medium text-muted-foreground mb-4">Last updated: February 08, 2026</p>
+                        <p className="text-sm font-medium text-muted-foreground mb-4">Last updated: February 09, 2026</p>
                         <p className="leading-relaxed">
                             PerkPeeps (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) provides a QR-based loyalty and ordering platform for cafés and food businesses.
                             This Privacy Policy explains how we collect, use, store, and protect personal information when PerkPeeps is used by cafés and their customers.
@@ -58,9 +58,9 @@ export default function PrivacyPage() {
                         <div className="ml-5 space-y-4">
                             <div>
                                 <h4 className="font-bold mb-2">1.1 Information from Customers (End Users)</h4>
-                                <p className="text-muted-foreground mb-2">When a customer joins a café’s loyalty program using PerkPeeps, we may collect:</p>
+                                <p className="text-muted-foreground mb-2">When a customer joins a café’s loyalty program using PerkPeeps, we collect:</p>
                                 <ul className="list-disc ml-5 space-y-1 text-muted-foreground">
-                                    <li>Mobile phone number</li>
+                                    <li>Mobile phone number (OTP consent only)</li>
                                     <li>One-time password (OTP) verification status</li>
                                     <li>Loyalty activity (visits, rewards earned, redemptions)</li>
                                     <li>Orders placed via QR (items and total spend)</li>
@@ -78,13 +78,13 @@ export default function PrivacyPage() {
                             </div>
 
                             <div>
-                                <h4 className="font-bold mb-2">1.2 Information from Cafés (Business Users)</h4>
-                                <p className="text-muted-foreground mb-2">When a café uses PerkPeeps, we may collect:</p>
+                                <h4 className="font-bold mb-2">1.2 Information from Cafés (Business Owners)</h4>
+                                <p className="text-muted-foreground mb-2">When a café uses PerkPeeps, we collect:</p>
                                 <ul className="list-disc ml-5 space-y-1 text-muted-foreground">
                                     <li>Business name and outlet details</li>
+                                    <li>Email and Phone number (for account management)</li>
                                     <li>Menu items and pricing</li>
                                     <li>Staff activity related to order and reward management</li>
-                                    <li>Contact details of the business owner or admin</li>
                                 </ul>
                             </div>
                         </div>
@@ -95,61 +95,87 @@ export default function PrivacyPage() {
                         <p className="text-muted-foreground">We use collected information strictly to:</p>
                         <ul className="list-disc ml-5 space-y-2 text-muted-foreground">
                             <li>Operate the loyalty and ordering system</li>
-                            <li>Track visits and reward progress</li>
+                            <li>Track visits and reward progress (loyalty tracking)</li>
                             <li>Prevent fraud and incorrect redemptions</li>
                             <li>Display reward status to customers</li>
                             <li>Provide dashboards and reports to café owners</li>
-                            <li>Send essential service messages (e.g., OTP verification)</li>
+                            <li>Send essential service messages via OTP verification</li>
                         </ul>
                         <p className="font-bold text-primary mt-4">We do not sell or rent personal data.</p>
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">3. WhatsApp & Messaging Use</h3>
-                        <p className="text-muted-foreground">PerkPeeps may use WhatsApp or SMS only for transactional purposes, such as:</p>
+                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">3. WhatsApp Business Platform</h3>
+                        <p className="text-muted-foreground">We use WhatsApp Cloud API for OTP delivery only. Meta processes:</p>
                         <ul className="list-disc ml-5 space-y-1 text-muted-foreground">
-                            <li>OTP verification</li>
-                            <li>Reward confirmations</li>
-                            <li>Essential service-related communication</li>
+                            <li>Phone number (for delivery)</li>
+                            <li>IP address and timestamp (for abuse prevention)</li>
                         </ul>
-                        <p className="text-muted-foreground mt-2">All messaging complies with Meta WhatsApp Business Platform policies.</p>
+                        <p className="text-muted-foreground mt-2">
+                            Full Meta Privacy Policy: <Link href="https://www.whatsapp.com/legal/privacy-policy" className="text-primary hover:underline" target="_blank">https://www.whatsapp.com/legal/privacy-policy</Link>
+                        </p>
+                        <p className="text-muted-foreground font-bold italic">We store only hashed phone numbers + verification status.</p>
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">4. Data Sharing</h3>
+                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">4. Business Profile Data</h3>
+                        <p className="text-muted-foreground leading-relaxed">
+                            Café owners provide specific information to maintain their WhatsApp Business Profile and Catalog compliance:
+                        </p>
+                        <ul className="list-disc ml-5 space-y-1 text-muted-foreground">
+                            <li>Business name and address</li>
+                            <li>Menu items and descriptions (available via catalog)</li>
+                        </ul>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">5. Compliance</h3>
+                        <p className="text-muted-foreground leading-relaxed">
+                            PerkPeeps is strictly compliant with the <Link href="https://business.whatsapp.com/policy" className="text-primary hover:underline" target="_blank">WhatsApp Business Policy</Link>.
+                            We do not facilitate the sale of any prohibited goods or services.
+                        </p>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">6. Data Sharing</h3>
                         <p className="leading-relaxed text-muted-foreground">
-                            We do not share personal data with third parties except trusted service providers required to operate PerkPeeps (e.g., messaging or hosting services) or when legally required by law.
+                            We do not share personal data with third parties except trusted service providers required to operate PerkPeeps (e.g., WhatsApp Cloud API or hosting services) or when legally required by law.
                         </p>
                         <p className="font-bold">Customer data is scoped to the café they visit and is never shared across cafés.</p>
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">5. Data Retention</h3>
+                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">7. Data Retention</h3>
+                        <p className="text-muted-foreground">We strengthen our data protection by minimizing retention:</p>
                         <ul className="list-disc ml-5 space-y-1 text-muted-foreground">
-                            <li>Loyalty progress is retained as long as the café uses PerkPeeps</li>
-                            <li>Earned rewards may expire based on café-defined rules</li>
-                            <li>Customers may request deletion of their data at any time</li>
+                            <li><strong>Phone:</strong> Deleted after 30 days of inactivity.</li>
+                            <li><strong>OTP logs:</strong> Retained for 7 days for security audit purposes.</li>
                         </ul>
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">6. Data Security</h3>
+                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">8. Data Security</h3>
                         <p className="text-muted-foreground">
                             We implement reasonable technical and organizational safeguards to protect data, including secure access controls, encrypted communication, and limited internal access.
                         </p>
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">7. User Rights</h3>
-                        <p className="text-muted-foreground">
-                            Customers have the right to access their stored data, request correction or deletion, or opt out of messaging where applicable. Requests can be made via the café or by contacting us directly.
+                        <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">9. DPDP Compliance (India)</h3>
+                        <p className="text-muted-foreground selection:bg-primary/20">
+                            In compliance with the Digital Personal Data Protection (DPDP) Act 2023:
                         </p>
+                        <ul className="list-disc ml-5 space-y-2 text-muted-foreground">
+                            <li><strong>Access/Delete:</strong> You can request access or permanent removal by emailing <a href="mailto:hello@perkpeeps.com" className="text-primary hover:underline">hello@perkpeeps.com</a>.</li>
+                            <li><strong>Removal Timeline:</strong> Permanent removal within 72 hours of request.</li>
+                            <li><strong>No Selling:</strong> We never sell or share your personal data with third parties for marketing.</li>
+                        </ul>
                     </div>
 
                     <div className="pt-8 border-t border-border mt-8">
                         <h3 className="font-bold mb-4">Contact</h3>
                         <div className="grid gap-2 text-muted-foreground">
-                            <p>Email: <a href="mailto:yashkathoke@perkpeeps.com" className="text-primary hover:underline">yashkathoke@perkpeeps.com</a></p>
+                            <p>Email: <a href="mailto:hello@perkpeeps.com" className="text-primary hover:underline">hello@perkpeeps.com</a></p>
                             <p>Business Name: PerkPeeps</p>
                             <p>Country: India</p>
                         </div>

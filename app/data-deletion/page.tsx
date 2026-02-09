@@ -59,14 +59,14 @@ export default function DataDeletionPage() {
                             </div>
                             <div className="p-6 rounded-xl border border-border bg-muted/30">
                                 <p className="font-bold mb-2">Option 2</p>
-                                <p className="text-sm text-muted-foreground">Email <a href="mailto:yashkathoke@perkpeeps.com" className="text-primary hover:underline">yashkathoke@perkpeeps.com</a> with your mobile number. We&apos;ll handle the rest.</p>
+                                <p className="text-sm text-muted-foreground">Email <a href="mailto:hello@perkpeeps.com" className="text-primary hover:underline">hello@perkpeeps.com</a> with your mobile number. We&apos;ll handle the rest.</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="space-y-6">
                         <h3 className="text-xl font-outfit font-bold border-l-4 border-primary pl-4">What Happens After Deletion?</h3>
-                        <p className="text-muted-foreground leading-relaxed">Once a deletion request is processed, the following actions are taken immediately:</p>
+                        <p className="text-muted-foreground leading-relaxed">In compliance with the <strong>Digital Personal Data Protection (DPDP) Act 2023</strong>, once a deletion request is processed, the following actions are taken:</p>
                         <ul className="space-y-4">
                             <li className="flex gap-3">
                                 <span className="text-primary">✦</span>
@@ -85,7 +85,7 @@ export default function DataDeletionPage() {
 
                     <div className="p-6 rounded-xl border border-primary/20 bg-primary/5 text-center">
                         <p className="text-sm font-medium">
-                            Deletion requests are typically processed within <span className="text-primary font-bold">30 days</span>.
+                            Deletion requests are processed within <span className="text-primary font-bold">72 hours</span> as per DPDP guidelines.
                         </p>
                     </div>
 

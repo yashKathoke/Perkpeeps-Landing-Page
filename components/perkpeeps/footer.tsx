@@ -87,8 +87,8 @@ export default function FooterSection() {
             <div className="flex flex-col md:items-end gap-8">
               <div>
                 <p className="text-[10px] font-bold text-foreground/30 uppercase tracking-[0.2em] mb-4">Contact</p>
-                <a href="mailto:yashkathoke@perkpeeps.com" className="text-sm text-foreground/60 hover:text-foreground transition-colors font-medium">
-                  yashkathoke@perkpeeps.com
+                <a href="mailto:hello@perkpeeps.com" className="text-sm text-foreground/60 hover:text-foreground transition-colors font-medium">
+                  hello@perkpeeps.com
                 </a>
               </div>
 

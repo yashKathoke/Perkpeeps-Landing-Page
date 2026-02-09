@@ -140,6 +140,16 @@ export default function TermsPage() {
                             These terms are governed by the laws of Maharashtra, India.
                         </p>
                     </div>
+
+                    <div className="pt-8 border-t border-border mt-8">
+                        <h3 className="font-bold mb-4">Contact</h3>
+                        <div className="grid gap-2 text-muted-foreground text-sm">
+                            <p>Email: <a href="mailto:yashkathoke@perkpeeps.com" className="text-primary hover:underline">yashkathoke@perkpeeps.com</a></p>
+                            <p>Phone: <a href="tel:+919405033217" className="text-primary hover:underline">+91 9405033217</a></p>
+                            <p>Address: Maleriya Colony, Pawsale Layout, Kaulkhed, Akola, Maharashtra, India</p>
+                            <p>Business Name: PerkPeeps</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 

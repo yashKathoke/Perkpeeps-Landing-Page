@@ -87,9 +87,17 @@ export default function FooterSection() {
             <div className="flex flex-col md:items-end gap-8">
               <div>
                 <p className="text-[10px] font-bold text-foreground/30 uppercase tracking-[0.2em] mb-4">Contact</p>
-                <a href="mailto:yashkathoke@perkpeeps.com" className="text-sm text-foreground/60 hover:text-foreground transition-colors font-medium">
-                  yashkathoke@perkpeeps.com
-                </a>
+                <div className="flex flex-col md:items-end gap-2">
+                  <a href="mailto:yashkathoke@perkpeeps.com" className="text-sm text-foreground/60 hover:text-foreground transition-colors font-medium">
+                    yashkathoke@perkpeeps.com
+                  </a>
+                  <a href="tel:+919405033217" className="text-sm text-foreground/60 hover:text-foreground transition-colors font-medium">
+                    +91 9405033217
+                  </a>
+                  <p className="text-[11px] text-foreground/40 mt-2 max-w-[200px]">
+                    Maleriya Colony, Pawsale Layout, Kaulkhed, Akola, MS, India
+                  </p>
+                </div>
               </div>
 
               <div>

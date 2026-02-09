@@ -59,7 +59,7 @@ export default function DataDeletionPage() {
                             </div>
                             <div className="p-6 rounded-xl border border-border bg-muted/30">
                                 <p className="font-bold mb-2">Option 2</p>
-                                <p className="text-sm text-muted-foreground">Email <a href="mailto:yashkathoke@perkpeeps.com" className="text-primary hover:underline">yashkathoke@perkpeeps.com</a> with your mobile number. We&apos;ll handle the rest.</p>
+                                <p className="text-sm text-muted-foreground">Email <a href="mailto:yashkathoke@perkpeeps.com" className="text-primary hover:underline">yashkathoke@perkpeeps.com</a> or WhatsApp <a href="tel:+919405033217" className="text-primary hover:underline">+91 9405033217</a> with your mobile number. We&apos;ll handle the rest.</p>
                             </div>
                         </div>
                     </div>
@@ -91,9 +91,11 @@ export default function DataDeletionPage() {
 
                     <div className="pt-8 border-t border-border">
                         <h3 className="font-bold mb-4">Meta/Facebook Requirement</h3>
-                        <p className="text-xs text-muted-foreground leading-relaxed">
+                        <p className="text-xs text-muted-foreground leading-relaxed italic mb-4">
                             This page serves as our official Data Deletion Callback URL/Instructions as required by Meta for the WhatsApp Business Platform.
-                            Users who have interacted with our WhatsApp bot can use the methods above to request data removal.
+                        </p>
+                        <p className="text-[10px] text-muted-foreground uppercase tracking-widest text-center border-t border-border/50 pt-8">
+                            Registered Office: Maleriya Colony, Pawsale Layout, Kaulkhed, Akola, MS, India
                         </p>
                     </div>
                 </div>
